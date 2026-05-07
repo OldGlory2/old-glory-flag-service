@@ -1,0 +1,12 @@
+{
+  "name": "old-glory-flag-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static site with secure Vercel API for Stripe.",
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "stripe": "^16.12.0"
+  }
+}

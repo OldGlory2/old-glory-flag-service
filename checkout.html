@@ -28,11 +28,11 @@
       <h2>Plan Selection</h2>
       <div class="grid-2">
         <label class="card">
-          <input type="radio" name="plan" checked />
+          <input type="radio" name="plan" value="standard" checked />
           <span><strong>Standard - $400/year</strong></span>
         </label>
         <label class="card">
-          <input type="radio" name="plan" />
+          <input type="radio" name="plan" value="pioneer" />
           <span><strong>Pioneer - $500/year</strong></span>
         </label>
       </div>
@@ -44,37 +44,48 @@
       <form id="checkout-form">
         <div class="field">
           <label for="name">Full Name</label>
-          <input id="name" required />
+          <input id="name" autocomplete="name" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" autocomplete="email" required />
         </div>
         <div class="field">
           <label for="phone">Phone Number</label>
-          <input id="phone" required />
+          <input id="phone" autocomplete="tel" required />
         </div>
         <div class="field">
           <label for="address">Street Address</label>
-          <input id="address" required />
+          <input id="address" autocomplete="address-line1" required />
         </div>
         <div class="grid-2">
           <div class="field">
             <label for="city">City</label>
-            <input id="city" required />
+            <input id="city" autocomplete="address-level2" required />
           </div>
           <div class="field">
             <label for="state">State</label>
-            <input id="state" value="UT" required />
+            <input id="state" value="UT" autocomplete="address-level1" required />
           </div>
         </div>
         <div class="field">
           <label for="zip">ZIP Code</label>
-          <input id="zip" required />
+          <input id="zip" autocomplete="postal-code" required />
           <div id="zip-msg" class="small"></div>
         </div>
-        <div class="alert small">Customer account login is Google-only.</div>
+        <div id="checkout-msg" class="small"></div>
+        <div class="alert small">Billing is managed through Stripe Customer Portal (no separate site login required).</div>
         <div class="field legal-list">
           <label><input type="checkbox" required /> I agree to the <a href="terms.html">Terms</a>, <a href="privacy-policy.html">Privacy Policy</a>, <a href="refund-policy.html">Refund Policy</a>, and <a href="service-agreement.html">Service Agreement</a>.</label>
         </div>
-        <button class="btn" type="submit">Continue to Stripe Checkout</button>
+        <button id="checkout-submit" class="btn" type="submit">Continue to Stripe Checkout</button>
       </form>
+    </section>
+
+    <section class="card">
+      <h2>Manage Existing Subscription</h2>
+      <p class="small muted">For security, billing portal access is sent directly by Stripe in receipts and billing emails.</p>
+      <p class="small muted">If you need help finding your billing link, contact <a href="mailto:gdrmace00@gmail.com">gdrmace00@gmail.com</a>.</p>
     </section>
   </main>
 </body>

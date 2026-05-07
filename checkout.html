@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout | Old Glory Flag Service LLC</title>
+  <meta name="description" content="Secure checkout for annual flag service plans in all Utah County ZIP codes." />
+  <meta name="robots" content="noindex,follow" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="index.html">Old Glory Flag Service LLC</a>
+      <nav class="menu">
+        <a href="services.html">Services</a>
+        <a href="packages.html">Packages</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1>Secure Checkout</h1>
+    <p class="muted">Subscriptions renew annually on your signup date. Service area includes all Utah County ZIP codes.</p>
+
+    <section class="card">
+      <h2>Plan Selection</h2>
+      <div class="grid-2">
+        <label class="card">
+          <input type="radio" name="plan" checked />
+          <span><strong>Standard - $400/year</strong></span>
+        </label>
+        <label class="card">
+          <input type="radio" name="plan" />
+          <span><strong>Pioneer - $500/year</strong></span>
+        </label>
+      </div>
+      <p class="small muted">Promo codes may temporarily reduce Pioneer to Standard price when active.</p>
+    </section>
+
+    <section class="card">
+      <h2>Customer Details</h2>
+      <form id="checkout-form">
+        <div class="field">
+          <label for="name">Full Name</label>
+          <input id="name" required />
+        </div>
+        <div class="field">
+          <label for="phone">Phone Number</label>
+          <input id="phone" required />
+        </div>
+        <div class="field">
+          <label for="address">Street Address</label>
+          <input id="address" required />
+        </div>
+        <div class="grid-2">
+          <div class="field">
+            <label for="city">City</label>
+            <input id="city" required />
+          </div>
+          <div class="field">
+            <label for="state">State</label>
+            <input id="state" value="UT" required />
+          </div>
+        </div>
+        <div class="field">
+          <label for="zip">ZIP Code</label>
+          <input id="zip" required />
+          <div id="zip-msg" class="small"></div>
+        </div>
+        <div class="alert small">Customer account login is Google-only.</div>
+        <div class="field legal-list">
+          <label><input type="checkbox" required /> I agree to the <a href="terms.html">Terms</a>, <a href="privacy-policy.html">Privacy Policy</a>, <a href="refund-policy.html">Refund Policy</a>, and <a href="service-agreement.html">Service Agreement</a>.</label>
+        </div>
+        <button class="btn" type="submit">Continue to Stripe Checkout</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

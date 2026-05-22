@@ -470,3 +470,28 @@ label {
     font-size: 0.95rem;
   }
 }
+
+/* service-area map */
+.service-area {
+  margin: 2.5rem 0;
+}
+.service-area h2 {
+  text-align: center;
+  color: var(--navy);
+  margin-bottom: 1rem;
+}
+.map-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 12px rgba(12,35,75,0.08);
+  max-width: 550px;
+  margin: 0 auto;
+}
+.map-card svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+

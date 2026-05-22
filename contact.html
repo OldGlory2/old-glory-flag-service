@@ -12,6 +12,7 @@
   <meta property="og:image:width" content="1024" />
   <meta property="og:image:height" content="1024" />
   <link rel="canonical" href="https://oldgloryflagservice.com/contact.html" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
 </head>
@@ -76,8 +77,9 @@
             <textarea id="c-message" name="message" rows="4" required></textarea>
           </div>
           <div class="field">
-            <label><input type="checkbox" required /> I agree to receive a reply by email</label>
+            <label><input type="checkbox" name="opt_in" id="c-opt" required /> I agree to receive a reply by email</label>
           </div>
+          <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY_HERE"></div>
           <button class="btn" type="submit">Send Message</button>
           <p id="c-status" class="small muted"></p>
         </form>

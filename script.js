@@ -84,3 +84,49 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
 });
+
+// contact form + reCAPTCHA
+(function() {
+  const cForm = document.getElementById('contact-form');
+  const cStatus = document.getElementById('c-status');
+  if (!cForm || !cStatus) return;
+
+  const setMessage = (msg, isErr) => {
+    cStatus.textContent = msg;
+    cStatus.className = isErr ? 'small err' : 'small ok';
+  };
+
+  cForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const resp = grecaptcha.getResponse();
+    if (!resp) {
+      setMessage('Please complete the reCAPTCHA.', true);
+      return;
+    }
+
+    const data = {
+      name:    cForm.name.value.trim(),
+      email:   cForm.email.value.trim(),
+      phone:   cForm.phone.value.trim(),
+      subject: cForm.subject.value,
+      message: cForm.message.value.trim(),
+      opt_in:  cForm.opt_in?.checked || false,
+      recaptcha: resp
+    };
+
+    setMessage('Sending...', false);
+    fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type':'application/json' },
+      body: JSON.stringify(data)
+    })
+      .then(res => res.json())
+      .then(json => {
+        if (json.error) throw new Error(json.error);
+        setMessage('Message sent! We\'ll be in touch soon.', false);
+        cForm.reset();
+        grecaptcha.reset();
+      })
+      .catch(err => setMessage('Sorry, there was an error.', true));
+  });
+})();

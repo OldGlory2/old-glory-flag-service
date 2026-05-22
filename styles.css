@@ -480,15 +480,6 @@ label {
   color: var(--navy);
   margin-bottom: 1rem;
 }
-.map-card {
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: 0.75rem;
-  padding: 1.5rem;
-  box-shadow: 0 2px 12px rgba(12,35,75,0.08);
-  max-width: 550px;
-  margin: 0 auto;
-}
 .map-card svg {
   width: 100%;
   height: auto;
@@ -496,11 +487,13 @@ label {
 }
 
 
-/* g-recaptcha margin and message styles */
-.g-recaptcha {
   margin: 0.7rem 0 1rem;
   transform: scale(0.85);
   transform-origin: left;
 }
 .err  { color: var(--red); }
 .ok   { color: #138000; }
+/* City list */
+.city-list { text-align:center; margin:1rem 0; }
+.city-list p { color:var(--navy); margin:.5rem 0; }
+.city-list p:first-child { font-weight:500; line-height:1.8; }

@@ -12,7 +12,6 @@
   <meta property="og:image:width" content="1024" />
   <meta property="og:image:height" content="1024" />
   <link rel="canonical" href="https://oldgloryflagservice.com/contact.html" />
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
 </head>
@@ -34,55 +33,24 @@
   <section class="hero">
     <div class="container">
       <h1>Contact Us</h1>
-      <p>Call, email, or send a message — we'll get back fast.</p>
+      <p>Call or email — we'll get back within 24 hours.</p>
     </div>
   </section>
 
   <main class="section">
-    <div class="container grid-2">
-      <article class="card">
-        <h2>Direct Contact</h2>
-        <p><strong>Phone:</strong> <a href="tel:+12107991368">210-799-1368</a></p>
-        <p><strong>Email:</strong> <a href="mailto:gdrmace00@gmail.com">gdrmace00@gmail.com</a></p>
-        <p><strong>Service Area:</strong> All Utah County ZIP codes</p>
-        <p class="muted small">We aim to reply within 24 hours.</p>
-      </article>
+    <div class="container">
+      <article class="card" style="max-width:600px;margin:0 auto;text-align:center;">
+        <p class="muted" style="margin-bottom:1.5rem;">All Utah County ZIP codes</p>
 
-      <article class="card">
-        <h2>Send a Message</h2>
-        <form id="contact-form">
-          <div class="field">
-            <label for="c-name">Name</label>
-            <input id="c-name" name="name" required />
-          </div>
-          <div class="field">
-            <label for="c-email">Email</label>
-            <input id="c-email" name="email" type="email" required />
-          </div>
-          <div class="field">
-            <label for="c-phone">Phone (optional)</label>
-            <input id="c-phone" name="phone" type="tel" />
-          </div>
-          <div class="field">
-            <label for="c-subject">Subject</label>
-            <select id="c-subject" name="subject">
-              <option>General question</option>
-              <option>Get a quote</option>
-              <option>Service issue</option>
-              <option>Billing question</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="c-message">Message</label>
-            <textarea id="c-message" name="message" rows="4" required></textarea>
-          </div>
-          <div class="field">
-            <label><input type="checkbox" name="opt_in" id="c-opt" required /> I agree to receive a reply by email</label>
-          </div>
-          <div class="g-recaptcha" data-sitekey="6Lc...xxx"></div>
-          <button class="btn" type="submit">Send Message</button>
-          <p id="c-status" class="small muted"></p>
-        </form>
+        <p style="font-size:1.25rem;margin:1.25rem 0;">
+          <a href="tel:+12107991368" style="color:var(--red);font-weight:600;">210-799-1368</a>
+        </p>
+
+        <p style="font-size:1.1rem;">
+          <a href="mailto:gdrmace00@gmail.com">gdrmace00@gmail.com</a>
+        </p>
+
+        <p class="muted">Hours: Mon–Sat 8am–6pm</p>
       </article>
     </div>
   </main>

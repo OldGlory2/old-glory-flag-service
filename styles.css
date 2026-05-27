@@ -619,3 +619,20 @@ label {
   color: var(--gold);
   font-style: normal;
 }
+
+.charity-org-card .org-name a {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: rgba(255,215,0,0.5);
+  text-underline-offset: 3px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.charity-org-card .org-name a:hover {
+  color: var(--gold);
+  text-decoration-color: var(--gold);
+}
+
+.charity-org-card .org-name a::after {
+  display: none;
+}

@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" role="img" aria-label="Old Glory Flag Service LLC">
+  <defs>
+    <linearGradient id="poleGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c9a44a"/>
+      <stop offset="50%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#8a6b1a"/>
+    </linearGradient>
+    <linearGradient id="flagShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.10"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(8,10)">
+    <rect x="0" y="0" width="4" height="100" rx="2" fill="url(#poleGrad)"/>
+    <circle cx="2" cy="2" r="4" fill="#ffd700" stroke="#8a6b1a" stroke-width="0.6"/>
+
+    <g transform="translate(4,8)">
+      <path d="M0,0
+               C 22,-4 44,8 66,4
+               C 78,2 88,6 96,4
+               L 96,52
+               C 78,56 60,46 40,50
+               C 22,54 10,52 0,54 Z"
+            fill="#bf0d3e"/>
+
+      <path d="M0,0
+               C 22,-4 44,8 66,4
+               C 78,2 88,6 96,4
+               L 96,12
+               C 78,14 60,8 40,12
+               C 22,16 10,14 0,14 Z" fill="#ffffff"/>
+      <path d="M0,18
+               C 18,16 36,22 56,20
+               C 72,18 84,22 96,20
+               L 96,28
+               C 80,30 64,24 46,28
+               C 28,32 12,30 0,30 Z" fill="#ffffff"/>
+      <path d="M0,34
+               C 18,32 36,38 56,36
+               C 72,34 84,38 96,36
+               L 96,44
+               C 80,46 64,40 46,44
+               C 28,48 12,46 0,46 Z" fill="#ffffff"/>
+
+      <path d="M0,0
+               C 14,-2 28,4 42,2
+               L 42,22
+               C 28,24 14,20 0,22 Z" fill="#0c234b"/>
+
+      <g fill="#ffffff">
+        <circle cx="6"  cy="3"  r="1.0"/>
+        <circle cx="14" cy="3"  r="1.0"/>
+        <circle cx="22" cy="4"  r="1.0"/>
+        <circle cx="30" cy="4"  r="1.0"/>
+        <circle cx="38" cy="4"  r="1.0"/>
+        <circle cx="10" cy="8"  r="1.0"/>
+        <circle cx="18" cy="9"  r="1.0"/>
+        <circle cx="26" cy="9"  r="1.0"/>
+        <circle cx="34" cy="9"  r="1.0"/>
+        <circle cx="6"  cy="13" r="1.0"/>
+        <circle cx="14" cy="13" r="1.0"/>
+        <circle cx="22" cy="14" r="1.0"/>
+        <circle cx="30" cy="14" r="1.0"/>
+        <circle cx="38" cy="14" r="1.0"/>
+        <circle cx="10" cy="18" r="1.0"/>
+        <circle cx="18" cy="19" r="1.0"/>
+        <circle cx="26" cy="19" r="1.0"/>
+        <circle cx="34" cy="19" r="1.0"/>
+      </g>
+
+      <path d="M0,0
+               C 22,-4 44,8 66,4
+               C 78,2 88,6 96,4
+               L 96,52
+               C 78,56 60,46 40,50
+               C 22,54 10,52 0,54 Z"
+            fill="url(#flagShade)"/>
+    </g>
+  </g>
+
+  <g transform="translate(130,0)" font-family="Georgia, 'Times New Roman', serif">
+    <text x="0" y="52" font-size="34" font-weight="700" fill="#0c234b" letter-spacing="1.5">OLD GLORY</text>
+    <line x1="0"   y1="62" x2="42"  y2="62" stroke="#bf0d3e" stroke-width="2"/>
+    <polygon points="52,58 56,62 52,66 48,62" fill="#ffd700" stroke="#bf0d3e" stroke-width="0.6"/>
+    <line x1="66"  y1="62" x2="232" y2="62" stroke="#bf0d3e" stroke-width="2"/>
+    <text x="0" y="86" font-size="18" font-weight="600" fill="#bf0d3e" letter-spacing="6">FLAG SERVICE</text>
+    <text x="0" y="106" font-size="10" font-weight="500" fill="#5a5f69" letter-spacing="3" font-family="Arial, Helvetica, sans-serif">UTAH COUNTY · LLC</text>
+  </g>
+</svg>

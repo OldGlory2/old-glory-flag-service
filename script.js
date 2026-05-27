@@ -18,6 +18,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!zipInput || !zipMsg || !form) return;
 
+  const planParam = new URLSearchParams(window.location.search).get("plan");
+  if (planParam) {
+    const planRadio = document.querySelector(`input[name='plan'][value='${planParam}']`);
+    if (planRadio) planRadio.checked = true;
+  }
+
   function setMessage(el, message, isError) {
     if (!el) return;
     el.textContent = message || "";
